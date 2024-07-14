@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="foods.html">Foods</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+   
+    <div class="custom-contact-form">
+        <h2>Contact Us</h2>
+        <form id="customContactForm">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" class="custom-input" required>
+
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" class="custom-input" required>
+
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" class="custom-input" required>
+
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" class="custom-input" required>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" class="custom-textarea" required></textarea>
+
+            <button type="button" class="custom-submit-button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+   
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" alt="img"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="img"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="img"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">india</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
